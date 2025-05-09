@@ -1,8 +1,112 @@
 /*  your css code here. If applicable */
-.container{
-	margin:100px;
-	width:300px;
-	display:flex;
-	flex-direction:column;
-	gap:10px;
-}
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      width: 90%;
+    }
+
+    .left {
+      flex: 1;
+      padding-right: 50px;
+    }
+
+    .left h1 {
+      color: #1877f2;
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 24px;
+      color: #1c1e21;
+    }
+
+    .right {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .form input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      font-size: 17px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 14px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .form a {
+      display: block;
+      text-align: center;
+      margin: 12px 0;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .divider {
+      border-bottom: 1px solid #dadde1;
+      margin: 20px 0;
+    }
+
+    .create-account {
+      text-align: center;
+    }
+
+    .create-account button {
+      background-color: #42b72a;
+      color: white;
+      padding: 14px 20px;
+      font-size: 17px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left, .right {
+        padding: 10px;
+        width: 100%;
+      }
+      .left h1 {
+        font-size: 48px;
+      }
+      .left p {
+        font-size: 18px;
+      }
+    }
