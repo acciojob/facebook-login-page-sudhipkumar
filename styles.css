@@ -37,6 +37,11 @@
       color: #1c1e21;
     }
 
+.left img{
+	width:200px;
+	height:100px;
+}
+
     .right {
       flex: 1;
       background: #fff;
